@@ -3,30 +3,72 @@
   <head>
     <meta charset="UTF-8">
     <title>Application 6</title>
-     <style>
+    <style>
       h1 {
         text-align: center;
       }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .text-box {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.4;
+      }
     </style>
-     <style>
+    <style>
       h2 {
         text-align: center;
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .text-box {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.4;
       }
     </style>
   </head>
   <body>
+
     <h1>Application 6</h1>
     <h2>Madeline Moran Real Time Systems</h2>
-    <div style="display: flex; justify-content: center;">
+    <div class="video-container">
+      <iframe 
+        width="560" 
+        height="315"
+        src="https://www.youtube.com/embed/URXHkBX-4HM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-   
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <div class="text-box">
+      <p>
+        In this assignment I developed a model of a real time system to align with Luminar Technologies LiDAR sensors and perception software for self-driving cars. My design includes two LEDs (one acting as a power symbol 
+        and one as an error symbol), a push button (acting as a manual break), and a potentiometer which acts as a sensor to measure distance. This project connects to WIFI using Wokwi to share real-time updates on the 
+        distance between the car and any other objects.
+      </p>
+    </div>
 
   </body>
 </html>
